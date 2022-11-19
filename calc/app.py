@@ -13,4 +13,4 @@ def calculate(method_name):
     num1 = request.args.get('a', type=int)
     num2 = request.args.get('b', type=int)
     method, msg = method_by_method_name[method_name]
-    return f"{msg} {num1} and {num2} equals {method(num1, num2)}"
+    return f"{msg} :{num1} and {num2} equals {method(num1, num2)}"
